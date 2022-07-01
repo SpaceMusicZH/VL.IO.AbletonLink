@@ -9,7 +9,7 @@ namespace VL.IO.AbletonLink
 
     public class AbletonLink : IDisposable
     {
-  
+ 
         private static volatile AbletonLink singletonInstance;
         private IntPtr nativeInstance = IntPtr.Zero;
         private const double INITIAL_TEMPO = 120.0;
@@ -22,14 +22,14 @@ namespace VL.IO.AbletonLink
                 {
                 
                     singletonInstance = new AbletonLink();               
-                    singletonInstance.setup(INITIAL_TEMPO);
+                    singletonInstance.Setup(INITIAL_TEMPO);
                 
                 }
                 return singletonInstance;
             }
         }
 
-    
+
         [DllImport ("AbletonLinkDLL")]
         private static extern IntPtr CreateAbletonLink();
         private AbletonLink()
@@ -50,100 +50,108 @@ namespace VL.IO.AbletonLink
                 if (nativeInstance != IntPtr.Zero) {
                 DestroyAbletonLink(nativeInstance);
                 nativeInstance = IntPtr.Zero;
-                
             }
         }
 
+
         [DllImport ("AbletonLinkDLL")]
-        private static extern void setup(IntPtr ptr, double bpm);
+        private static extern void Setup(IntPtr ptr, double bpm);
     
-        private void setup(double bpm)
+        private void Setup(double bpm)
         {
-            setup(nativeInstance, bpm);
+            Setup(nativeInstance, bpm);
         }
+
 
         [DllImport ("AbletonLinkDLL")]
         private static extern void setTempo(IntPtr ptr, double bpm);
-        public void setTempo(double bpm)
-        {
-            setTempo(nativeInstance, bpm);
-        }
 
+   
         [DllImport ("AbletonLinkDLL")]
         private static extern double tempo(IntPtr ptr);
-        public double tempo()
+
+        public double Tempo
         {
-            return tempo(nativeInstance);
+            get { return tempo(nativeInstance); }
+            set { setTempo(nativeInstance, value); }
         }
+
 
         [DllImport ("AbletonLinkDLL")]
         private static extern void setQuantum(IntPtr ptr, double quantum);
-        public void setQuantum(double quantum)
-        {
-            setQuantum(nativeInstance, quantum);
-        }
+
 
         [DllImport ("AbletonLinkDLL")]
         private static extern double quantum(IntPtr ptr);
-        public double quantum()
+
+        public double Quantum
         {
-            return quantum(nativeInstance);
+            get { return quantum(nativeInstance); }
+            set { setQuantum(nativeInstance, value); }
         }
+
 
         [DllImport ("AbletonLinkDLL")]
         private static extern bool isEnabled(IntPtr ptr);
-        public bool isEnabled()
-        {
-            return isEnabled(nativeInstance);
-        }
 
         [DllImport ("AbletonLinkDLL")]
         private static extern void enable(IntPtr ptr, bool bEnable);
-        public void enable(bool bEnable)
+
+        public bool Enabled
         {
-            enable(nativeInstance, bEnable);
+            get { return isEnabled(nativeInstance); }
+            set { enable(nativeInstance, value); }
         }
+
 
         [DllImport("AbletonLinkDLL")]
-        private static extern void enableStartStopSync(IntPtr ptr, bool bEnable);
-        public void enableStartStopSync(bool bEnable)
+        private static extern void EnableStartStopSync(IntPtr ptr, bool bEnable);
+
+        public void EnableStartStopSync(bool bEnable)
         {
-            enableStartStopSync(nativeInstance, bEnable);
+            EnableStartStopSync(nativeInstance, bEnable);
         }
 
-            [DllImport("AbletonLinkDLL")]
-            private static extern void startPlaying(IntPtr ptr);
-            public void startPlaying()
-            {
-                startPlaying(nativeInstance);
-            }
 
-            [DllImport("AbletonLinkDLL")]
-            private static extern void stopPlaying(IntPtr ptr);
-            public void stopPlaying()
-            {
-                stopPlaying(nativeInstance);
-            }
-
-            [DllImport("AbletonLinkDLL")]
-            private static extern bool isPlaying(IntPtr ptr);
-            public bool isPlaying()
-            {
-                return isPlaying(nativeInstance);
-            }
-
-            [DllImport ("AbletonLinkDLL")]
-        private static extern int numPeers(IntPtr ptr);
-        public int numPeers()
+        [DllImport("AbletonLinkDLL")]
+        private static extern void startPlaying(IntPtr ptr);
+        public void StartPlaying()
         {
-            return numPeers(nativeInstance);
+            startPlaying(nativeInstance);
         }
+
+
+        [DllImport("AbletonLinkDLL")]
+        private static extern void stopPlaying(IntPtr ptr);
+        public void StopPlaying()
+        {
+            stopPlaying(nativeInstance);
+        }
+
+
+        [DllImport("AbletonLinkDLL")]
+        private static extern bool isPlaying(IntPtr ptr);
+
+        public bool IsPlaying
+        {
+            get { return isEnabled(nativeInstance); }
+        }
+
 
         [DllImport ("AbletonLinkDLL")]
-        private static extern void update(IntPtr ptr, out double beat, out double phase);
-        public void update(out double beat, out double phase)
+        private static extern int numPeers(IntPtr ptr);
+ 
+        public int NumPeers
         {
-            update(nativeInstance, out beat, out phase);
+            get { return numPeers(nativeInstance); }
+        }
+
+
+        [DllImport ("AbletonLinkDLL")]
+        private static extern void Update(IntPtr ptr, out double beat, out double phase);
+        public void Update(out double beat, out double phase)
+        {
+            Update(nativeInstance, out beat, out phase);
         }
 
     }

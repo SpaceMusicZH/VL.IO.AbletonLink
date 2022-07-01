@@ -55,11 +55,11 @@ namespace VL.IO.AbletonLink
 
 
         [DllImport ("AbletonLinkDLL")]
-        private static extern void Setup(IntPtr ptr, double bpm);
+        private static extern void setup(IntPtr ptr, double bpm);
     
         private void Setup(double bpm)
         {
-            Setup(nativeInstance, bpm);
+            setup(nativeInstance, bpm);
         }
 
 
@@ -91,11 +91,27 @@ namespace VL.IO.AbletonLink
         }
 
 
-        [DllImport ("AbletonLinkDLL")]
-        private static extern bool isEnabled(IntPtr ptr);
+        [DllImport("AbletonLinkDLL")]
+        private static extern void forceBeatAtTime(IntPtr ptr, double beat);
+        public void ForceBeatAtTime(double beat)
+        {
+            forceBeatAtTime(nativeInstance, beat);
+        }
+
+
+        [DllImport("AbletonLinkDLL")]
+        private static extern void requestBeatAtTime(IntPtr ptr, double beat);
+        public void RequestBeatAtTime(double beat)
+        {
+            requestBeatAtTime(nativeInstance, beat);
+        }
+
 
         [DllImport ("AbletonLinkDLL")]
         private static extern void enable(IntPtr ptr, bool bEnable);
+
+        [DllImport("AbletonLinkDLL")]
+        private static extern bool isEnabled(IntPtr ptr);
 
         public bool Enabled
         {
@@ -105,11 +121,11 @@ namespace VL.IO.AbletonLink
 
 
         [DllImport("AbletonLinkDLL")]
-        private static extern void EnableStartStopSync(IntPtr ptr, bool bEnable);
+        private static extern void enableStartStopSync(IntPtr ptr, bool bEnable);
 
-        public void EnableStartStopSync(bool bEnable)
+        public void EnableStartStopSync(bool enable)
         {
-            EnableStartStopSync(nativeInstance, bEnable);
+            enableStartStopSync(nativeInstance, enable);
         }
 
 
@@ -148,10 +164,10 @@ namespace VL.IO.AbletonLink
 
 
         [DllImport ("AbletonLinkDLL")]
-        private static extern void Update(IntPtr ptr, out double beat, out double phase);
-        public void Update(out double beat, out double phase)
+        private static extern void update(IntPtr ptr, out double rbeat, out double rphase, out double rtempo, out double rquantum, out double rtime, out int rnumPeers);
+        public void Update(out double beat, out double phase, out double tempo, out double quantum, out double time, out int numPeers)
         {
-            Update(nativeInstance, out beat, out phase);
+            update(nativeInstance, out beat, out phase, out tempo, out quantum, out time, out numPeers);
         }
 
     }

@@ -1,19 +1,3 @@
-/* Copyright 2016, Akihiro Komori. All rights reserved.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 #ifndef MyAbletonLink_h
 #define MyAbletonLink_h
 
@@ -44,11 +28,13 @@ class MyAbletonLink {
 public:
     struct Status
     {
-
         double beat;
         double phase;
-		
-        Status() : beat(0.0), phase(0.0){}
+        double tempo;
+        double quantum;
+        double time;
+        int numPeers;
+        Status() : beat(0.0), phase(0.0), tempo(0.0), quantum(0.0), time(0.0), numPeers(0) {}
     };
     MyAbletonLink();
     ~MyAbletonLink();
@@ -66,11 +52,16 @@ public:
     void setQuantum(double quantum);
     double quantum();
     
-    bool isEnabled() const;
     void enable(bool bEnable);
+    bool isEnabled() const;
+
+    void forceBeatAtTime(double beat);
+    void requestBeatAtTime(double beat);
+
 	void startPlaying();
 	void stopPlaying();
 	bool isPlaying();
+
 	void enableStartStopSync(bool bEnable);
     
     std::size_t numPeers();
@@ -78,8 +69,14 @@ public:
     Status update();
     
 private:
-    ableton::Link* link;
+    ableton::Link* link_;
     double quantum_;
+
+    bool isNumPeersChanged_;
+    int numPeers_;
+
+    bool isTempoChanged_;
+    double tempo_;
 };
 
 

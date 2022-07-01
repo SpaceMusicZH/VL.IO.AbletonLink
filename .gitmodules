@@ -1,3 +1,3 @@
-[submodule "link"]
+[submodule "src/AbletonLinkDLL/link"]
 	path = src/AbletonLinkDLL/link
-	url = git@github.com:Ableton/link.git
+	url = https://github.com/Ableton/link.git

@@ -49,6 +49,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\lib\net472\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <Prefer32Bit>false</Prefer32Bit>

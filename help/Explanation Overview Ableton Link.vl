@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="VFVPIXcQYEXNcmj3maHRez" LanguageVersion="2021.4.10.1014" Version="0.128">
+  <Patch Id="RAo3hZs5iM4PnwSdbaecsu">
+    <Canvas Id="MGsjRsZXbX2M3dhgcoAqtd" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="VvIvU9MZAFzOzu2LDiOZzw">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="H65sVpOBoXaNPec3pLqSXI">
+        <Canvas Id="SEoPbLuBgAVL06CNFnFLVK" CanvasType="Group">
+          <Node Bounds="106,201,145,19" Id="T7hJjPIurRVPu2WJBkOiei">
+            <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink" LastSymbolSource="VL.IO.AbletonLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Link" />
+            </p:NodeReference>
+            <Pin Id="QZsyx3cAScUOYiCGGd2Bfa" Name="Tempo" Kind="InputPin" />
+            <Pin Id="BjtQLhysWfMNpWppJ3uYiK" Name="Quantum" Kind="InputPin" />
+            <Pin Id="EEm4FfIDo5VN92PTOUg9jn" Name="Start Stop Sync" Kind="InputPin" />
+            <Pin Id="O5HDuvgOnYlQdxpd9gyH2v" Name="Request Beat At Time" Kind="InputPin" />
+            <Pin Id="UWW4o0BtYHNK90e2FtB0yt" Name="Force Beat At Time" Kind="InputPin" />
+            <Pin Id="IMXyZir6z8ONGPDafTJtpV" Name="Play" Kind="InputPin" />
+            <Pin Id="PHt1rK7hbdsOHhpRCPGZQG" Name="Enabled" Kind="InputPin" />
+            <Pin Id="KtVjtgtUDJaPH2HPkCb4D6" Name="Beat" Kind="OutputPin" />
+            <Pin Id="LjkXCV0N2JCPgKIvYbtmVs" Name="Phase" Kind="OutputPin" />
+            <Pin Id="EOSLAm9PhLBOanSRkiUZDF" Name="Tempo" Kind="OutputPin" />
+            <Pin Id="MSWfsBRtHhrO1d9Wp1yR2h" Name="Quantum" Kind="OutputPin" />
+            <Pin Id="ENSLeCrpaXhLlTy6Trtuic" Name="Time" Kind="OutputPin" />
+            <Pin Id="RAw8zr6HE7qMte2xhJIitL" Name="Num Peers" Kind="OutputPin" />
+            <Pin Id="VW0vMBNEpfSQSR2H3hJ5aW" Name="Is Playing" Kind="OutputPin" />
+            <Pin Id="PGEGAPptCtQQSOJXfL8F7i" Name="Enabled" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VnqQJciOaSaLQ8prWAsfQE" Comment="Beat" Bounds="108,451,87,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MYPJIDzgtqWNJZaJc8ydf5" Comment="Phase" Bounds="128,426,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="U7HRZyzLKoeMqjsrUvTHM4" Comment="Tempo" Bounds="148,399,47,17" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FYlpJQcsRDqM7no6tcxr0a" Comment="Quantum" Bounds="168,374,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TwJpCnSNHusMJWdIDnmeL6" Comment="Time" Bounds="188,349,71,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MWmtwwlSDIQLRtNTTbDwmH" Comment="Num Peers" Bounds="208,324,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="J8VdTnQbBHQPV0yJ2IjI4q" Comment="Is Playing" Bounds="228,279,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FJNlXBbEjIWO6UC9UTGIzN" Comment="Enabled" Bounds="248,234,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HjhL47eZ5hmMUNqdDv9YIO" Comment="Enabled" Bounds="248,146,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AZHJwx8IfUVNIkXasBkUsU" Comment="Play" Bounds="225,91,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="CdfLdwqT1TOPIkRhfKTdbo" Name="Create" />
+        <Patch Id="JcBcfAUGs4xMzitKBVF224" Name="Update" />
+        <ProcessDefinition Id="TNpQv4DJCGnPCwrAkjQVgx">
+          <Fragment Id="JxFOuPoA8uNPQKnMXdcSYU" Patch="CdfLdwqT1TOPIkRhfKTdbo" Enabled="true" />
+          <Fragment Id="MDddNi5GlsyOlnxAf9o15V" Patch="JcBcfAUGs4xMzitKBVF224" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="EyuNSlLXGcROMkz5HO7KR7" Ids="KtVjtgtUDJaPH2HPkCb4D6,VnqQJciOaSaLQ8prWAsfQE" />
+        <Link Id="DfEukKJeWGcNDPavw4mTE6" Ids="LjkXCV0N2JCPgKIvYbtmVs,MYPJIDzgtqWNJZaJc8ydf5" />
+        <Link Id="OHGQ20eZeoNOxvVAwA3Px6" Ids="EOSLAm9PhLBOanSRkiUZDF,U7HRZyzLKoeMqjsrUvTHM4" />
+        <Link Id="PjYwm3htYK6MtM7KpLWuhY" Ids="MSWfsBRtHhrO1d9Wp1yR2h,FYlpJQcsRDqM7no6tcxr0a" />
+        <Link Id="QbiUfm6NJ5jORZZCQMF0TO" Ids="ENSLeCrpaXhLlTy6Trtuic,TwJpCnSNHusMJWdIDnmeL6" />
+        <Link Id="Tz70XPb3IqlMqwhPBFMsBZ" Ids="RAw8zr6HE7qMte2xhJIitL,MWmtwwlSDIQLRtNTTbDwmH" />
+        <Link Id="Vjk6YGI0NxaNcwROdlZ28p" Ids="VW0vMBNEpfSQSR2H3hJ5aW,J8VdTnQbBHQPV0yJ2IjI4q" />
+        <Link Id="Bt0jGQ7WC6tQLxwg1g7OQc" Ids="PGEGAPptCtQQSOJXfL8F7i,FJNlXBbEjIWO6UC9UTGIzN" />
+        <Link Id="IXogviHD08ZPjaLg1ZAEWu" Ids="HjhL47eZ5hmMUNqdDv9YIO,PHt1rK7hbdsOHhpRCPGZQG" />
+        <Link Id="Bl8Oz5OmlWPPxbFWPf3Fo4" Ids="AZHJwx8IfUVNIkXasBkUsU,IMXyZir6z8ONGPDafTJtpV" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="EkEiVb83sCvPO6ltZF9aTb" Location="VL.CoreLib" Version="2021.4.10-1014-gedb3112d37" />
+  <DocumentDependency Id="AKvEpchi5nzLnbLli6pheh" Location="../VL.IO.AbletonLink.vl" />
+</Document>

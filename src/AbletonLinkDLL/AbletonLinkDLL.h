@@ -32,6 +32,9 @@ extern "C" {
     bool ABLETONLINKDLL_API isPlaying(void* ptr);
     void ABLETONLINKDLL_API enableStartStopSync(void* ptr, bool bEnable);
 
+    void ABLETONLINKDLL_API forceBeatAtTime(void* ptr, double beat);
+    void ABLETONLINKDLL_API requestBeatAtTime(void* ptr, double beat);
+
     int ABLETONLINKDLL_API numPeers(void* ptr);
     void ABLETONLINKDLL_API update(void* ptr, double* rbeat, double* rphase, double* rtempo, double* rquantum, double* rtime, int* rnumPeers);
 

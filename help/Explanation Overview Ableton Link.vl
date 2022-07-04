@@ -14,18 +14,18 @@
       </p:NodeReference>
       <Patch Id="H65sVpOBoXaNPec3pLqSXI">
         <Canvas Id="SEoPbLuBgAVL06CNFnFLVK" CanvasType="Group">
-          <Node Bounds="106,191,185,19" Id="T7hJjPIurRVPu2WJBkOiei">
+          <Node Bounds="106,202,185,19" Id="T7hJjPIurRVPu2WJBkOiei">
             <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink" LastSymbolSource="VL.IO.AbletonLink.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Link" />
             </p:NodeReference>
-            <Pin Id="LBbJp7HsELbMDnFqUF9No5" Name="Enable" Kind="InputPin" />
             <Pin Id="Ibc44S7lUXfLyUaGSftNuH" Name="Tempo" Kind="InputPin" />
             <Pin Id="G8YCZSwWH5NPLO3CtOg8xP" Name="Quantum" Kind="InputPin" />
             <Pin Id="O5HDuvgOnYlQdxpd9gyH2v" Name="Request Beat At Time" Kind="InputPin" />
             <Pin Id="UWW4o0BtYHNK90e2FtB0yt" Name="Force Beat At Time" Kind="InputPin" />
             <Pin Id="EEm4FfIDo5VN92PTOUg9jn" Name="Start Stop Sync" Kind="InputPin" DefaultValue="True" />
             <Pin Id="IMXyZir6z8ONGPDafTJtpV" Name="Play" Kind="InputPin" />
+            <Pin Id="LBbJp7HsELbMDnFqUF9No5" Name="Enable" Kind="InputPin" />
             <Pin Id="KtVjtgtUDJaPH2HPkCb4D6" Name="Beat" Kind="OutputPin" />
             <Pin Id="LjkXCV0N2JCPgKIvYbtmVs" Name="Phase" Kind="OutputPin" />
             <Pin Id="EOSLAm9PhLBOanSRkiUZDF" Name="Tempo" Kind="OutputPin" />
@@ -35,15 +35,15 @@
             <Pin Id="VW0vMBNEpfSQSR2H3hJ5aW" Name="Is Playing" Kind="OutputPin" />
             <Pin Id="PGEGAPptCtQQSOJXfL8F7i" Name="Enabled" Kind="OutputPin" />
           </Node>
-          <Pad Id="VnqQJciOaSaLQ8prWAsfQE" Comment="Beat" Bounds="108,441,87,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="MYPJIDzgtqWNJZaJc8ydf5" Comment="Phase" Bounds="134,416,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="U7HRZyzLKoeMqjsrUvTHM4" Comment="Tempo" Bounds="161,388,47,17" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FYlpJQcsRDqM7no6tcxr0a" Comment="Quantum" Bounds="186,364,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="TwJpCnSNHusMJWdIDnmeL6" Comment="Time" Bounds="211,340,71,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="MWmtwwlSDIQLRtNTTbDwmH" Comment="Num Peers" Bounds="238,310,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="J8VdTnQbBHQPV0yJ2IjI4q" Comment="Is Playing" Bounds="262,268,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FJNlXBbEjIWO6UC9UTGIzN" Comment="Enabled" Bounds="288,222,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HjhL47eZ5hmMUNqdDv9YIO" Comment="Enabled" Bounds="108,108,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="VnqQJciOaSaLQ8prWAsfQE" Comment="Beat" Bounds="108,452,87,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MYPJIDzgtqWNJZaJc8ydf5" Comment="Phase" Bounds="134,427,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="U7HRZyzLKoeMqjsrUvTHM4" Comment="Tempo" Bounds="161,399,47,17" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FYlpJQcsRDqM7no6tcxr0a" Comment="Quantum" Bounds="186,375,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TwJpCnSNHusMJWdIDnmeL6" Comment="Time" Bounds="211,351,71,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MWmtwwlSDIQLRtNTTbDwmH" Comment="Num Peers" Bounds="238,321,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="J8VdTnQbBHQPV0yJ2IjI4q" Comment="Is Playing" Bounds="262,279,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FJNlXBbEjIWO6UC9UTGIzN" Comment="Enabled" Bounds="288,233,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HjhL47eZ5hmMUNqdDv9YIO" Comment="Enabled" Bounds="288,152,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -52,13 +52,43 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AZHJwx8IfUVNIkXasBkUsU" Comment="Play" Bounds="289,107,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="AZHJwx8IfUVNIkXasBkUsU" Comment="Play" Bounds="258,107,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="LI2L0hlJxQ2LFBNjMDSVYw" Name="Wrapper for Ableton Link" Bounds="498,98,305,203">
+            <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
+          </Overlay>
+          <Pad Id="GUAzSEMYHG6PxTCm5ggWMy" Bounds="504,155,179,19" ShowValueBox="true" isIOBox="true" Value="For more Info please refer to:">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NXJXxweXKd1OWoftc7rkdQ" Bounds="514,189,227,19" ShowValueBox="true" isIOBox="true" Value="https://ableton.github.io/link/">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KckebrujxJmNXPELZXIPqx" Bounds="514,227,226,25" ShowValueBox="true" isIOBox="true" Value="https://github.com/Ableton/link">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>

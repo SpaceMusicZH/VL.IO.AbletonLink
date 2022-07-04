@@ -118,11 +118,11 @@
                 <CategoryReference Kind="AssemblyCategory" Name="VL" />
                 <CategoryReference Kind="AssemblyCategory" Name="IO" />
                 <CategoryReference Kind="AssemblyCategory" Name="AbletonLink" />
-                <Choice Kind="OperationCallFlag" Name="IsEnabled" />
+                <Choice Kind="OperationCallFlag" Name="Enabled" />
               </p:NodeReference>
               <Pin Id="GjLPnrFFdkONr9pwWckfRP" Name="Input" Kind="StateInputPin" />
               <Pin Id="AffNvh1mlKGPv3fVeE8Cse" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="R4akok4yXavMJgUcxnsR38" Name="Is Enabled" Kind="OutputPin" />
+              <Pin Id="GxUdsvVXMooOWf4FhdtKzC" Name="Enabled" Kind="OutputPin" />
             </Node>
             <Node Bounds="169,949,504,168" Id="M4PNBsHxpvhQRHk9pZUgFK">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
@@ -240,7 +240,6 @@
               <Pin Id="HN4AJhOsm13NHEwhtzSQ6g" Name="Output" Kind="StateOutputPin" />
               <Pin Id="P7dbGVUA6gDM2ppiPNkZQp" Name="Input 3" Kind="InputPin" />
             </Node>
-            <ControlPoint Id="LeQo9HWxQDUM8lpgeFP6zm" Bounds="170,855" />
             <Node Bounds="1476,289,90,86" Id="AWMMlPKhdULNFnkIhTEesT">
               <p:NodeReference>
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -249,6 +248,7 @@
               <Pin Id="MK1Yv6XDdtQN14A26hoNwz" Name="Force" Kind="InputPin" />
               <Pin Id="OQAWGAIDImSLa9oMBWA1dO" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="S47bpBTwIkeL7ZGOQWewKO" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="AkLBRQiNe7HLwej9HXV35s" Bounds="1551,296" Alignment="Top" />
               <Patch Id="QAqEU1ppSFgP1H2wylPvit" ManuallySortedPins="true">
                 <Patch Id="VdJflFGe9PoLAdqiLJeos3" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="A76NQcb7CrEN3CmGexfCmi" Name="Then" ManuallySortedPins="true" />
@@ -258,14 +258,13 @@
                     <CategoryReference Kind="AssemblyCategory" Name="VL" />
                     <CategoryReference Kind="AssemblyCategory" Name="IO" />
                     <CategoryReference Kind="AssemblyCategory" Name="AbletonLink" />
-                    <Choice Kind="OperationCallFlag" Name="Enable" />
+                    <Choice Kind="OperationCallFlag" Name="SetEnabled" />
                   </p:NodeReference>
                   <Pin Id="GvB8bEqplhXQB4jFQNZWYU" Name="Input" Kind="InputPin" />
                   <Pin Id="CkFnuvGPZHoMC6G998Ep0M" Name="Value" Kind="InputPin" />
                   <Pin Id="NSDCoDOZ9jjPzk3sOB8wBl" Name="Output" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="AkLBRQiNe7HLwej9HXV35s" Bounds="1551,296" Alignment="Top" />
             </Node>
             <Node Bounds="998,302,128,86" Id="GwpskkltRXILcAo0ekApmX">
               <p:NodeReference>
@@ -400,6 +399,7 @@
             </Node>
             <Pad Id="AXuiFogSuLzMy8fhhsDq7B" SlotId="N1Aa0AXUOmIM1RYKLOlySS" Bounds="1551,265" />
             <Pad Id="PRGGnFEESoLNT4KkLfDzTF" SlotId="N1Aa0AXUOmIM1RYKLOlySS" Bounds="102,476" />
+            <ControlPoint Id="IWtJbCBW1hQNaalOFSe5uT" Bounds="171,879" />
           </Canvas>
           <Slot Id="Q5LTxaXB3rbOoNTEL73FC0" Name="Instance" />
           <Link Id="MzXSkjy9cY2NOsWknNNdwB" Ids="CND65AX9vshOoWWCALbOXD,QTaHVLpa2eRMJpUnEronv2" />
@@ -515,7 +515,6 @@
           <Link Id="JyoKeMTd5VLOAhH6f8bM3r" Ids="Cj7OgSkMtUfPJK7VVPBck4,R5KXzCgvuQuLkPa42tksuv" />
           <Link Id="NqBir4thAHRLiMnKlBq8V6" Ids="DgHcD2QX02eLatWp66YEsi,PbdvXpXC41RNmBddYpDbsQ" />
           <Link Id="H45jrwTx0XEMZOhyePRi9K" Ids="AkmobxtjLPcPxcvaWgXHbL,MKIhjyojph5NkCMU1O53az" />
-          <Link Id="E3TUkvdIedUOtuqi0T0SQj" Ids="R4akok4yXavMJgUcxnsR38,H8bgGzfs10sONk2tsNR1l9" />
           <Link Id="Rptwc46oPnzLPh92zzcjGK" Ids="Cj7OgSkMtUfPJK7VVPBck4,EL5Kw3GdAHEM8gajxkILXY" />
           <Link Id="SkrSA0dpgXuM2yoZoYEe0U" Ids="U8StLRsAxjpO6tLug1ofak,QkcOkKwI6YWOdB1NpzBe5T" />
           <Link Id="FPiv5VJIoh0LwuL5dHy0vw" Ids="GdbWl2erGt8Ni9bxm7UCB0,P8ydM4Ti8XgPKnJ98FZnE5" />
@@ -524,7 +523,6 @@
           <Link Id="MYEby0YCIRTNo7G5vzTrAx" Ids="Ri6KEH32JRlOmsrJ9HMdDf,GjLPnrFFdkONr9pwWckfRP" />
           <Link Id="SeRBWGjd19kMVBBMBdEWwR" Ids="AffNvh1mlKGPv3fVeE8Cse,IkhUPTj7D33OXgurZlhRAh" />
           <Link Id="E6EOhHrSxQgNWmWCQ7q5uA" Ids="VtT60Oe9gfQN3XLej2n86Z,Ceydpn7gVm2MoopeJPgWjb" />
-          <Link Id="OEWS68PZqvdOgp8iWK9qb0" Ids="R4akok4yXavMJgUcxnsR38,LeQo9HWxQDUM8lpgeFP6zm,MyAT1aXEwsVNuZ0fQjokr4" />
           <Link Id="N7V3QKfVyg8OPwUeKh8KMG" Ids="Ly1pemdf1R6QcKeH4e1I9N,CND65AX9vshOoWWCALbOXD" />
           <Link Id="EKmdu25EcyMPemY1i237s6" Ids="CiMdl9RCLk8PGlIhN77mDL,AXuiFogSuLzMy8fhhsDq7B" />
           <Link Id="R8FulNGMIjOLRhVqGQSI5J" Ids="AkLBRQiNe7HLwej9HXV35s,CkFnuvGPZHoMC6G998Ep0M" />
@@ -557,6 +555,8 @@
           </ProcessDefinition>
           <Link Id="MGNEk5xs4P0NVfpAmwC6uy" Ids="JcM4yPZexeHLPrVg6Ho4aU,P7dbGVUA6gDM2ppiPNkZQp" />
           <Link Id="VCLFxindUMBPkMAqcQtEu3" Ids="PRGGnFEESoLNT4KkLfDzTF,GrZ2Jb2iYXfNn8g6znfHuy" />
+          <Link Id="CWlXPKO7gX0LH7XH605cbz" Ids="GxUdsvVXMooOWf4FhdtKzC,H8bgGzfs10sONk2tsNR1l9" />
+          <Link Id="KuT7A9yH6v6MUlLgZtMb14" Ids="GxUdsvVXMooOWf4FhdtKzC,IWtJbCBW1hQNaalOFSe5uT,MyAT1aXEwsVNuZ0fQjokr4" />
         </Patch>
       </Node>
     </Canvas>

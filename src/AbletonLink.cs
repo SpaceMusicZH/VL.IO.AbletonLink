@@ -106,17 +106,14 @@ namespace VL.IO.AbletonLink
 
         [DllImport("AbletonLinkDLL")]
         private static extern void enable(IntPtr ptr, bool bEnable);
-        public void Enable(bool value)
-        {
-            enable(nativeInstance, value);
-        }
 
         [DllImport("AbletonLinkDLL")]
         private static extern bool isEnabled(IntPtr ptr);
 
-        public bool IsEnabled
+        public bool Enabled
         {
             get { return isEnabled(nativeInstance); }
+            set { enable(nativeInstance, value); }
         }
 
 

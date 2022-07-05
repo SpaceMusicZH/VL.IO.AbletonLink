@@ -582,5 +582,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="CpqzJ7z7xgQQZmX4dFSjd0" Location="VL.CoreLib" Version="2021.4.10-1014-gedb3112d37" />
-  <PlatformDependency Id="ODWBLaCn8F8L8ILmTXKy9E" Location="./lib/net472/AbletonLink.dll" />
+  <PlatformDependency Id="ODWBLaCn8F8L8ILmTXKy9E" Location="./lib/netstandard2.0/AbletonLink.dll" />
 </Document>

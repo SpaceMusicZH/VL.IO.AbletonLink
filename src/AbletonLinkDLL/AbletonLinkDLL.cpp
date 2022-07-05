@@ -1,7 +1,4 @@
-// AbletonLinkDLL.cpp : Definiert die exportierten Funktionen für die DLL-Anwendung.
-//
-
-#include "stdafx.h"
+#include "pch.h"
 #include "AbletonLinkDLL.h"
 
 

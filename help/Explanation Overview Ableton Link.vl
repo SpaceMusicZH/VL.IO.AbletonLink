@@ -25,6 +25,7 @@
             <Pin Id="UWW4o0BtYHNK90e2FtB0yt" Name="Force Beat At Time" Kind="InputPin" />
             <Pin Id="EEm4FfIDo5VN92PTOUg9jn" Name="Start Stop Sync" Kind="InputPin" DefaultValue="True" />
             <Pin Id="IMXyZir6z8ONGPDafTJtpV" Name="Play" Kind="InputPin" />
+            <Pin Id="G1m9BOx8ZC9QHYDtoTupdC" Name="Stop" Kind="InputPin" />
             <Pin Id="LBbJp7HsELbMDnFqUF9No5" Name="Enable" Kind="InputPin" />
             <Pin Id="KtVjtgtUDJaPH2HPkCb4D6" Name="Beat" Kind="OutputPin" />
             <Pin Id="LjkXCV0N2JCPgKIvYbtmVs" Name="Phase" Kind="OutputPin" />
@@ -44,15 +45,6 @@
           <Pad Id="J8VdTnQbBHQPV0yJ2IjI4q" Comment="Is Playing" Bounds="262,279,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="FJNlXBbEjIWO6UC9UTGIzN" Comment="Enabled" Bounds="288,233,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="HjhL47eZ5hmMUNqdDv9YIO" Comment="Enabled" Bounds="288,152,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation>
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <FullNameCategoryReference ID="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="AZHJwx8IfUVNIkXasBkUsU" Comment="Play" Bounds="258,107,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -91,6 +83,24 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="HebOsry0D2ENSQDdYCi92I" Comment="Play" Bounds="236,52,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TmLMJee1KBuPHFud9079WK" Comment="Stop" Bounds="263,98,35,39" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CdfLdwqT1TOPIkRhfKTdbo" Name="Create" />
         <Patch Id="JcBcfAUGs4xMzitKBVF224" Name="Update" />
@@ -106,8 +116,9 @@
         <Link Id="Tz70XPb3IqlMqwhPBFMsBZ" Ids="RAw8zr6HE7qMte2xhJIitL,MWmtwwlSDIQLRtNTTbDwmH" />
         <Link Id="Vjk6YGI0NxaNcwROdlZ28p" Ids="VW0vMBNEpfSQSR2H3hJ5aW,J8VdTnQbBHQPV0yJ2IjI4q" />
         <Link Id="Bt0jGQ7WC6tQLxwg1g7OQc" Ids="PGEGAPptCtQQSOJXfL8F7i,FJNlXBbEjIWO6UC9UTGIzN" />
-        <Link Id="Bl8Oz5OmlWPPxbFWPf3Fo4" Ids="AZHJwx8IfUVNIkXasBkUsU,IMXyZir6z8ONGPDafTJtpV" />
         <Link Id="NNpIypoQ891MajyGyNerWc" Ids="HjhL47eZ5hmMUNqdDv9YIO,LBbJp7HsELbMDnFqUF9No5" />
+        <Link Id="PLJdyKpQNqULuKGPRYdpUK" Ids="HebOsry0D2ENSQDdYCi92I,IMXyZir6z8ONGPDafTJtpV" />
+        <Link Id="OacA6rK8QRDMJULy4zrRuj" Ids="TmLMJee1KBuPHFud9079WK,G1m9BOx8ZC9QHYDtoTupdC" />
       </Patch>
     </Node>
   </Patch>

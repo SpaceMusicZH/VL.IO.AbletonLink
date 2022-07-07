@@ -19,6 +19,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Link" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="Ibc44S7lUXfLyUaGSftNuH" Name="Tempo" Kind="InputPin" />
             <Pin Id="G8YCZSwWH5NPLO3CtOg8xP" Name="Quantum" Kind="InputPin" />
             <Pin Id="O5HDuvgOnYlQdxpd9gyH2v" Name="Request Beat At Time" Kind="InputPin" />

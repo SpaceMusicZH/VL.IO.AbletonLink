@@ -36,8 +36,8 @@
               <Pin Id="QTaHVLpa2eRMJpUnEronv2" Name="Input" Kind="StateInputPin" />
               <Pin Id="FkJQTX91pfSQCcXqQkcQP0" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <ControlPoint Id="CiMdl9RCLk8PGlIhN77mDL" Bounds="1821,251" />
-            <ControlPoint Id="F5oAusMR4uKPk7Wo8KNkzj" Bounds="595,219" />
+            <ControlPoint Id="CiMdl9RCLk8PGlIhN77mDL" Bounds="1821,224" />
+            <ControlPoint Id="F5oAusMR4uKPk7Wo8KNkzj" Bounds="597,219" />
             <ControlPoint Id="PDHSvrIaUDxLdJJYnHVk7y" Bounds="761,219" />
             <ControlPoint Id="Tko3WiPJXayLctB4DVuzoe" Bounds="1476,258" />
             <Node Bounds="214,805,674,26" Id="TZ0TD9PDAPnN2wIaIJzFSW">
@@ -144,8 +144,8 @@
             <ControlPoint Id="KefSY7tqJxnOYMEuRfKbDH" Bounds="801,1127" />
             <ControlPoint Id="H8bgGzfs10sONk2tsNR1l9" Bounds="885,1127" />
             <ControlPoint Id="B6err2Z8ZfzLVZSDwFoF6X" Bounds="505,1131" />
-            <ControlPoint Id="A0UqptCVIMkOOFmwJIyomE" Bounds="945,219" />
-            <ControlPoint Id="PjH2hsEBqG2MhUJXg0XL7R" Bounds="1144,219" />
+            <ControlPoint Id="A0UqptCVIMkOOFmwJIyomE" Bounds="1048,252" />
+            <ControlPoint Id="PjH2hsEBqG2MhUJXg0XL7R" Bounds="1258,252" />
             <Pad Id="PbdvXpXC41RNmBddYpDbsQ" SlotId="UliizyAVcdBNzK3aLK4NRO" Bounds="1476,286" />
             <Pad Id="GdbWl2erGt8Ni9bxm7UCB0" SlotId="UliizyAVcdBNzK3aLK4NRO" Bounds="81,410" />
             <Pad Id="N6zABd0VJtKNP2sWV7H7JJ" SlotId="RgcTr5tA2SrP3GaPu6p8DM" Bounds="1588,379" />
@@ -222,7 +222,7 @@
               </Patch>
               <ControlPoint Id="Tz0FZgR1PghMnwZrJS2q5M" Bounds="1476,313" Alignment="Top" />
             </Node>
-            <Pad Id="AXuiFogSuLzMy8fhhsDq7B" SlotId="N1Aa0AXUOmIM1RYKLOlySS" Bounds="1821,274" />
+            <Pad Id="AXuiFogSuLzMy8fhhsDq7B" SlotId="N1Aa0AXUOmIM1RYKLOlySS" Bounds="1821,247" />
             <Pad Id="PRGGnFEESoLNT4KkLfDzTF" SlotId="N1Aa0AXUOmIM1RYKLOlySS" Bounds="121,384" />
             <ControlPoint Id="CuMiNiqLEUaPsvPS2DOGU3" Bounds="205,873" />
             <Pad Id="Fp5RVV1Yb2UPlISkb41EZ3" SlotId="HA4R5YR0PcMPufl6RQHHMP" Bounds="1648,379" />
@@ -306,146 +306,98 @@
               </Patch>
             </Node>
             <Pad Id="VltrN318IcPNePecTMR4bP" SlotId="HA4R5YR0PcMPufl6RQHHMP" Bounds="113,589" />
-            <Pad Id="FxIiWDVzeUlNSbDzLpDucl" SlotId="Go7mHQzBgUFLZDS8SWTIVo" Bounds="868,366" />
-            <ControlPoint Id="FcPyTuv9wzoQQgbWW6rzoW" Bounds="868,267" />
-            <Node Bounds="943,321,128,80" Id="LGcFk2KYx5cNldURoscsEN">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="EsEJLsa6slKNm8c7Y5Lo7p" Name="Condition" Kind="InputPin" />
-              <Patch Id="DuEZVnORmKSNnEYnLvFjIH" ManuallySortedPins="true">
-                <Patch Id="HQPyWuJzVA1MkeTYhvNVfm" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="GEIxIabwslzNesfdsEGyRt" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="955,349,104,26" Id="IV4I4VX0yFfP4OykdKCnk1">
-                  <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="RequestBeatAtTime" />
-                  </p:NodeReference>
-                  <Pin Id="JKtETLQVZ6lPWi6nUcHzuZ" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Ia5h4feJOT2LWCTAnduqa7" Name="Beat" Kind="InputPin" />
-                  <Pin Id="J7ief3Ok4HbP7Klsi7oNA7" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="PCX3kVJy1OpNf9EaWMIGZ8" Name="Apply" Kind="InputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <Node Bounds="943,265,56,19" Id="ADgPCSlvz1GPqDLvtc0pEO">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="TogEdge" />
-              </p:NodeReference>
-              <Pin Id="UE4idIyJj0NP6H08PlPqN6" Name="Value" Kind="InputPin" />
-              <Pin Id="HiyiVHPratHQXWSvxYKLKl" Name="Up Edge" Kind="OutputPin" />
-              <Pin Id="Gg0tBB2g8u0NCElhRts72A" Name="Down Edge" Kind="OutputPin" />
-            </Node>
-            <Pad Id="QOwPHVmdCI8Ptk7xwUzaAQ" SlotId="Go7mHQzBgUFLZDS8SWTIVo" Bounds="1007,303" />
-            <Node Bounds="1142,316,128,80" Id="Fpqexcc5clmOzyHVlhb12f">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="U8l8A5uGgdyPLwb44XGosq" Name="Condition" Kind="InputPin" />
-              <Patch Id="KPk6F6KKieoOI3gyVHXzKw" ManuallySortedPins="true">
-                <Patch Id="GJl3SOvxQFtQSMtRYgaMOb" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="DE60hXkQKpOO3WUNUgMZEq" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="1154,345,104,26" Id="FhsDlw3NLBdQCWeD6rJqSj">
-                  <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="ForceBeatAtTime" />
-                  </p:NodeReference>
-                  <Pin Id="C7HPduQRQfJMZ63cTyEfpw" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="RZewGfqXU3iPffmEpB0uDS" Name="Beat" Kind="InputPin" />
-                  <Pin Id="LEa2vuwTO8jOsANratN4b3" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="IYTVRwREklXNJa0fHjDhOt" Name="Apply" Kind="InputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <Pad Id="IBhLc5YFJm3NeQYRkxLGnT" SlotId="Go7mHQzBgUFLZDS8SWTIVo" Bounds="1206,303" />
-            <Node Bounds="1142,265,56,19" Id="BZu54H08OAWL6YlPQASoCC">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="TogEdge" />
-              </p:NodeReference>
-              <Pin Id="FpHy7nZwzKZMlKnm6FL8P4" Name="Value" Kind="InputPin" />
-              <Pin Id="Vt7Eui5a8V8PFSEoaSI1r6" Name="Up Edge" Kind="OutputPin" />
-              <Pin Id="TQDReXem8CGLwvk8Bbzet7" Name="Down Edge" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="550,316,91,80" Id="LZILbV7HqzyPSlx07ckR3a">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="F0GwATRuou9Obrro5nWQZw" Name="Condition" Kind="InputPin" />
-              <Patch Id="JskbA5chNEAQW86d0T2Qxl" ManuallySortedPins="true">
-                <Patch Id="JzkfPYOjY1JNAviVE1qkP9" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="UVpwqgrNzf1OFNQWR1twwD" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="563,345,66,26" Id="CKlWctNQbqDLH25w9yz6FX">
-                  <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <AssemblyReference ID="VL.IO.AbletonLink.dll" />
-                    <CategoryReference Kind="AssemblyCategory" Name="VL" />
-                    <CategoryReference Kind="AssemblyCategory" Name="IO" />
-                    <CategoryReference Kind="AssemblyCategory" Name="AbletonLink" />
-                    <Choice Kind="OperationCallFlag" Name="SetTempo" />
-                  </p:NodeReference>
-                  <Pin Id="Q9vSRPjP72qPq21t91lu5I" Name="Input" Kind="InputPin" />
-                  <Pin Id="LWmWlCw7D14NlZxdIabujk" Name="Value" Kind="InputPin" />
-                  <Pin Id="FlinOBoRJmaLq2O1RhlRds" Name="Output" Kind="OutputPin" />
-                  <Pin Id="BVLoZ2tUJzWMcaUL2azKRw" Name="Apply" Kind="InputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <ControlPoint Id="PSUOZMOtRTqLW40XOTvfdb" Bounds="552,244" />
-            <Node Bounds="550,263,56,19" Id="N61xWYCZJTzPjkO4HdJavB">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="TogEdge" />
-              </p:NodeReference>
-              <Pin Id="L5iOGp8ogowNYQ5GduMvwi" Name="Value" Kind="InputPin" />
-              <Pin Id="RRtsUQcUr3oLUCiu9oHXHl" Name="Up Edge" Kind="OutputPin" />
-              <Pin Id="FwGLT4joW0jOW1aD9HH4mo" Name="Down Edge" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="713,319,96,80" Id="QD6HnAQM2v0OFa4RVogZwJ">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="OPdUqrwW5YhM0HiEowFgmV" Name="Condition" Kind="InputPin" />
-              <Patch Id="IiXPekb6SKyLkxBmPeiLRh" ManuallySortedPins="true">
-                <Patch Id="M4Ug2sN6GyNN8M8TAzq417" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="QESMuJKNVzFOYVR8uQqaIQ" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="725,348,72,26" Id="Nq5YAKmt0X0PKtCtGApvCw">
-                  <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <AssemblyReference ID="VL.IO.AbletonLink.dll" />
-                    <CategoryReference Kind="AssemblyCategory" Name="VL" />
-                    <CategoryReference Kind="AssemblyCategory" Name="IO" />
-                    <CategoryReference Kind="AssemblyCategory" Name="AbletonLink" />
-                    <Choice Kind="OperationCallFlag" Name="SetQuantum" />
-                  </p:NodeReference>
-                  <Pin Id="G7RLdqapdYvOMJSmwoX2wa" Name="Input" Kind="InputPin" />
-                  <Pin Id="DbiwNuSwuORODKEfSChmJx" Name="Value" Kind="InputPin" />
-                  <Pin Id="DmrPe5AVJgtQSB8qdb2sVA" Name="Output" Kind="OutputPin" />
-                  <Pin Id="BY84ZE7kL42Mu0kSpPC2bk" Name="Apply" Kind="InputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <ControlPoint Id="TtL0CVzmqsRMwciTWx8SDB" Bounds="715,246" />
-            <Node Bounds="713,265,56,19" Id="PC3UpQDM9eDMdUXPGoZTiA">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="TogEdge" />
-              </p:NodeReference>
-              <Pin Id="E5kucJImQYEMiAqB8k4rRS" Name="Value" Kind="InputPin" />
-              <Pin Id="RmWqDigkky5PT5TbG5azgq" Name="Up Edge" Kind="OutputPin" />
-              <Pin Id="HvLP9yXLBsDMpVKOz2EmsR" Name="Down Edge" Kind="OutputPin" />
-            </Node>
+            <Pad Id="FxIiWDVzeUlNSbDzLpDucl" SlotId="Go7mHQzBgUFLZDS8SWTIVo" Bounds="868,351" />
+            <ControlPoint Id="FcPyTuv9wzoQQgbWW6rzoW" Bounds="867,267" />
+            <Pad Id="QOwPHVmdCI8Ptk7xwUzaAQ" SlotId="Go7mHQzBgUFLZDS8SWTIVo" Bounds="999,304" />
+            <Pad Id="IBhLc5YFJm3NeQYRkxLGnT" SlotId="Go7mHQzBgUFLZDS8SWTIVo" Bounds="1208,304" />
+            <ControlPoint Id="PSUOZMOtRTqLW40XOTvfdb" Bounds="628,252" />
+            <ControlPoint Id="TtL0CVzmqsRMwciTWx8SDB" Bounds="793,252" />
             <ControlPoint Id="KsMLXC6khqTQK1TMDecIqA" Bounds="797,237" />
             <ControlPoint Id="JfMAFivRGsfM5Ibr0clz1L" Bounds="538,234" />
+            <Node Bounds="626,304,37,19" Id="BM3eaUATTz6Mnh2PgVdc46">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="PyRde7KOYptOY8wCX2Jyi3" Name="Input" Kind="StateInputPin" />
+              <Pin Id="D5fgvnKkbe0OFFQ0nxTxHF" Name="Input 2" Kind="InputPin" />
+              <Pin Id="LsD6FCEV4DaMeH4d5n2voR" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="565,351,66,26" Id="CKlWctNQbqDLH25w9yz6FX">
+              <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <AssemblyReference ID="VL.IO.AbletonLink.dll" />
+                <CategoryReference Kind="AssemblyCategory" Name="VL" />
+                <CategoryReference Kind="AssemblyCategory" Name="IO" />
+                <CategoryReference Kind="AssemblyCategory" Name="AbletonLink" />
+                <Choice Kind="OperationCallFlag" Name="SetTempo" />
+              </p:NodeReference>
+              <Pin Id="Q9vSRPjP72qPq21t91lu5I" Name="Input" Kind="InputPin" />
+              <Pin Id="LWmWlCw7D14NlZxdIabujk" Name="Value" Kind="InputPin" />
+              <Pin Id="FlinOBoRJmaLq2O1RhlRds" Name="Output" Kind="OutputPin" />
+              <Pin Id="BVLoZ2tUJzWMcaUL2azKRw" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Node Bounds="792,304,37,19" Id="O7nqvjpanvpPZrp5UbnmZ7">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="Ji1RrCqNxaCPHnt7jAElUz" Name="Input" Kind="StateInputPin" />
+              <Pin Id="EQ6zelSnJxBQQdSKmLzGWy" Name="Input 2" Kind="InputPin" />
+              <Pin Id="CXJCThQVQIjLRQJGFBuzX2" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="725,351,72,26" Id="Nq5YAKmt0X0PKtCtGApvCw">
+              <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <AssemblyReference ID="VL.IO.AbletonLink.dll" />
+                <CategoryReference Kind="AssemblyCategory" Name="VL" />
+                <CategoryReference Kind="AssemblyCategory" Name="IO" />
+                <CategoryReference Kind="AssemblyCategory" Name="AbletonLink" />
+                <Choice Kind="OperationCallFlag" Name="SetQuantum" />
+              </p:NodeReference>
+              <Pin Id="G7RLdqapdYvOMJSmwoX2wa" Name="Input" Kind="InputPin" />
+              <Pin Id="DbiwNuSwuORODKEfSChmJx" Name="Value" Kind="InputPin" />
+              <Pin Id="DmrPe5AVJgtQSB8qdb2sVA" Name="Output" Kind="OutputPin" />
+              <Pin Id="BY84ZE7kL42Mu0kSpPC2bk" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Node Bounds="1047,304,37,19" Id="IkgyAIjzxgvOj4TRjqhJm9">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="NNoOtUXOlUfM34wEzKxdMu" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FKinH3wQGmeNDYqL65DiQ2" Name="Input 2" Kind="InputPin" />
+              <Pin Id="JzcFN1fLXqOOAIFY7CaEkh" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="948,351,104,26" Id="IV4I4VX0yFfP4OykdKCnk1">
+              <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="RequestBeatAtTime" />
+              </p:NodeReference>
+              <Pin Id="JKtETLQVZ6lPWi6nUcHzuZ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Ia5h4feJOT2LWCTAnduqa7" Name="Beat" Kind="InputPin" />
+              <Pin Id="J7ief3Ok4HbP7Klsi7oNA7" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="PCX3kVJy1OpNf9EaWMIGZ8" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Node Bounds="1256,304,37,19" Id="T8Cv140sXqmNTYRKtPpu7i">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="EPBBkYU4B2vOgOvxTyHHst" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OdBFgRTHzp3L1fUq6pWxcF" Name="Input 2" Kind="InputPin" />
+              <Pin Id="TRm3REPzQKCO363OE1etiq" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="1157,351,104,26" Id="FhsDlw3NLBdQCWeD6rJqSj">
+              <p:NodeReference LastCategoryFullName="VL.IO.AbletonLink.AbletonLink" LastSymbolSource="AbletonLink.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ForceBeatAtTime" />
+              </p:NodeReference>
+              <Pin Id="C7HPduQRQfJMZ63cTyEfpw" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RZewGfqXU3iPffmEpB0uDS" Name="Beat" Kind="InputPin" />
+              <Pin Id="LEa2vuwTO8jOsANratN4b3" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="IYTVRwREklXNJa0fHjDhOt" Name="Apply" Kind="InputPin" />
+            </Node>
           </Canvas>
           <Slot Id="Q5LTxaXB3rbOoNTEL73FC0" Name="Instance" />
           <Link Id="MzXSkjy9cY2NOsWknNNdwB" Ids="CND65AX9vshOoWWCALbOXD,QTaHVLpa2eRMJpUnEronv2" />
@@ -493,10 +445,6 @@
           <Link Id="PaIcw7EU7Q0P6iet6OOytx" Ids="Tz0FZgR1PghMnwZrJS2q5M,DzOO8odDdpqLiFLrpk1GFb" />
           <Slot Id="N1Aa0AXUOmIM1RYKLOlySS" Name="Enabled" />
           <Link Id="OKyn6WFCampLWyojOQjEm2" Ids="AXuiFogSuLzMy8fhhsDq7B,AkLBRQiNe7HLwej9HXV35s" />
-          <Link Id="DHvnd2O0I9nOI5aRAE302J" Ids="AXuiFogSuLzMy8fhhsDq7B,IYTVRwREklXNJa0fHjDhOt" />
-          <Link Id="QBEbReGRmkkLHm0KpKszFx" Ids="AXuiFogSuLzMy8fhhsDq7B,PCX3kVJy1OpNf9EaWMIGZ8" />
-          <Link Id="NrRDtr6nuwtNIfD1oXpELJ" Ids="AXuiFogSuLzMy8fhhsDq7B,BY84ZE7kL42Mu0kSpPC2bk" />
-          <Link Id="HUzeKj5KCHxN3meSolQd6m" Ids="AXuiFogSuLzMy8fhhsDq7B,BVLoZ2tUJzWMcaUL2azKRw" />
           <Link Id="VCLFxindUMBPkMAqcQtEu3" Ids="PRGGnFEESoLNT4KkLfDzTF,GrZ2Jb2iYXfNn8g6znfHuy" />
           <Link Id="CWlXPKO7gX0LH7XH605cbz" Ids="GxUdsvVXMooOWf4FhdtKzC,H8bgGzfs10sONk2tsNR1l9" />
           <Link Id="VXeuMxex32hOJ6WHIFvQO0" Ids="GxUdsvVXMooOWf4FhdtKzC,CuMiNiqLEUaPsvPS2DOGU3,SQJQ6z4DwIVL5UnPKCsjN3" />
@@ -558,19 +506,12 @@
             <Fragment Id="OYqr305J0zaOm1AExWmHRA" Patch="RFvXRe65u4sMr3YzQgYhx9" Enabled="true" />
             <Fragment Id="Bz6UwCxtXCKLkLvmXCNHXH" Patch="UV0DHsifA7bL4ldE9ri9RP" Enabled="true" />
           </ProcessDefinition>
-          <Link Id="RyGDbqBtFS0OuqcekrrJKB" Ids="A0UqptCVIMkOOFmwJIyomE,UE4idIyJj0NP6H08PlPqN6" />
-          <Link Id="DHvxPubIMuEPH3NXenC9Oh" Ids="HiyiVHPratHQXWSvxYKLKl,EsEJLsa6slKNm8c7Y5Lo7p" />
           <Link Id="MpU5TE6sBRgNNXkXt8tLC1" Ids="QOwPHVmdCI8Ptk7xwUzaAQ,Ia5h4feJOT2LWCTAnduqa7" />
           <Link Id="GRBpFvXzBKYM2yGwGbjQaD" Ids="IBhLc5YFJm3NeQYRkxLGnT,RZewGfqXU3iPffmEpB0uDS" />
-          <Link Id="DWThUS1f4T9PXlylVqPJtb" Ids="Vt7Eui5a8V8PFSEoaSI1r6,U8l8A5uGgdyPLwb44XGosq" />
-          <Link Id="Q5avjhtrqlNPrOhbig5kAZ" Ids="PjH2hsEBqG2MhUJXg0XL7R,FpHy7nZwzKZMlKnm6FL8P4" />
           <Link Id="MuweBxtdqjeNhi9Ck1o0Wl" Ids="F5oAusMR4uKPk7Wo8KNkzj,LWmWlCw7D14NlZxdIabujk" />
           <Link Id="BEa2WZZV6ASPS8AX5x3yQn" Ids="EEa5545xhpOPNr1w4FAtok,PSUOZMOtRTqLW40XOTvfdb" IsHidden="true" />
-          <Link Id="Can4zf6pkKPOzEJDodPJZs" Ids="PSUOZMOtRTqLW40XOTvfdb,L5iOGp8ogowNYQ5GduMvwi" />
           <Link Id="DmxEvYzQXSfOx1g2zPTk5J" Ids="PDHSvrIaUDxLdJJYnHVk7y,DbiwNuSwuORODKEfSChmJx" />
           <Link Id="KILRX43jKW0PQmDzFZG5yS" Ids="CAaixMxL1xiLdn02Bjelin,TtL0CVzmqsRMwciTWx8SDB" IsHidden="true" />
-          <Link Id="JM50mOx0s3YNtu4YEqfaAN" Ids="TtL0CVzmqsRMwciTWx8SDB,E5kucJImQYEMiAqB8k4rRS" />
-          <Link Id="KZT3UYxCcmfMXPAVZ2LjdF" Ids="RmWqDigkky5PT5TbG5azgq,OPdUqrwW5YhM0HiEowFgmV" />
           <Patch Id="EDELPcTYPHpLh7GnDEpO5C" Name="Create" ParticipatingElements="NqBir4thAHRLiMnKlBq8V6,N7V3QKfVyg8OPwUeKh8KMG" />
           <Patch Id="UV0DHsifA7bL4ldE9ri9RP" Name="Update">
             <Pin Id="JQ4DjCOYFdJMwlFHQaDhGZ" Name="Beat" Kind="OutputPin" Bounds="588,1428" />
@@ -620,7 +561,18 @@
           <Patch Id="P07cmnDDTucLK9OS614fwc" Name="SetBeatAtTime">
             <Pin Id="VUfPLmjkZibLWT2hXQ5Y51" Name="Beat At TIme" Kind="InputPin" DefaultValue="0" />
           </Patch>
-          <Link Id="AuObY122RSYLOk2clkwtnQ" Ids="RRtsUQcUr3oLUCiu9oHXHl,F0GwATRuou9Obrro5nWQZw" />
+          <Link Id="Gr9QQfdsJ4JMdpYCJ91PoL" Ids="PSUOZMOtRTqLW40XOTvfdb,PyRde7KOYptOY8wCX2Jyi3" />
+          <Link Id="V1z1tUTYE3xPjYcfqG3EAb" Ids="AXuiFogSuLzMy8fhhsDq7B,D5fgvnKkbe0OFFQ0nxTxHF" />
+          <Link Id="E8jB4L4TWtDQCnWiOMgykh" Ids="LsD6FCEV4DaMeH4d5n2voR,BVLoZ2tUJzWMcaUL2azKRw" />
+          <Link Id="MNE9HVLJ43JPIoK0ZvxSde" Ids="TtL0CVzmqsRMwciTWx8SDB,Ji1RrCqNxaCPHnt7jAElUz" />
+          <Link Id="Nh0oUca5ZKjPWFHWDng4sR" Ids="AXuiFogSuLzMy8fhhsDq7B,EQ6zelSnJxBQQdSKmLzGWy" />
+          <Link Id="NGpWtNGIKaUM1n243cwMM4" Ids="CXJCThQVQIjLRQJGFBuzX2,BY84ZE7kL42Mu0kSpPC2bk" />
+          <Link Id="AkU1wkrvZG0MNdEeFEIufk" Ids="A0UqptCVIMkOOFmwJIyomE,NNoOtUXOlUfM34wEzKxdMu" />
+          <Link Id="NFVLcAIA7N9QM1TdoJaFNE" Ids="AXuiFogSuLzMy8fhhsDq7B,FKinH3wQGmeNDYqL65DiQ2" />
+          <Link Id="DRUPQHm7hO2OlebPr2KMOb" Ids="JzcFN1fLXqOOAIFY7CaEkh,PCX3kVJy1OpNf9EaWMIGZ8" />
+          <Link Id="TsQgjGurUF5QFYpuyVDBxC" Ids="AXuiFogSuLzMy8fhhsDq7B,OdBFgRTHzp3L1fUq6pWxcF" />
+          <Link Id="Ak8LcYVBuTvOZdvH0sVjnr" Ids="PjH2hsEBqG2MhUJXg0XL7R,EPBBkYU4B2vOgOvxTyHHst" />
+          <Link Id="HrQ7ofbx4KsLr6Kl0W926q" Ids="TRm3REPzQKCO363OE1etiq,IYTVRwREklXNJa0fHjDhOt" />
         </Patch>
       </Node>
     </Canvas>

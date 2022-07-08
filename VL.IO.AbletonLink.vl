@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AM0XsMuf4ztLlqMJ9DI9N1" LanguageVersion="2021.4.10.1014" Version="0.128">
+<Document xmlns:p="property" Id="AM0XsMuf4ztLlqMJ9DI9N1" LanguageVersion="2021.4.5.764" Version="0.128">
   <Patch Id="IbMfkMIeyQIOJgP3ueAGrm">
     <Canvas Id="NtstXdocF5oP5uCGLa8hlv" DefaultCategory="IO.AbletonLink" CanvasType="FullCategory">
       <!--
@@ -397,11 +397,9 @@
                   <Pin Id="BVLoZ2tUJzWMcaUL2azKRw" Name="Apply" Kind="InputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="SFhYt74eIPONvEDzgj7g1r" Bounds="564,322" Alignment="Top" />
-              <ControlPoint Id="LQpwaOqP5SgP08Kxxe1yWL" Bounds="564,390" Alignment="Bottom" />
             </Node>
-            <ControlPoint Id="PSUOZMOtRTqLW40XOTvfdb" Bounds="564,246" />
-            <Node Bounds="562,265,56,19" Id="N61xWYCZJTzPjkO4HdJavB">
+            <ControlPoint Id="PSUOZMOtRTqLW40XOTvfdb" Bounds="552,244" />
+            <Node Bounds="550,263,56,19" Id="N61xWYCZJTzPjkO4HdJavB">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="TogEdge" />
@@ -447,6 +445,7 @@
               <Pin Id="HvLP9yXLBsDMpVKOz2EmsR" Name="Down Edge" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="KsMLXC6khqTQK1TMDecIqA" Bounds="797,237" />
+            <ControlPoint Id="JfMAFivRGsfM5Ibr0clz1L" Bounds="538,234" />
           </Canvas>
           <Slot Id="Q5LTxaXB3rbOoNTEL73FC0" Name="Instance" />
           <Link Id="MzXSkjy9cY2NOsWknNNdwB" Ids="CND65AX9vshOoWWCALbOXD,QTaHVLpa2eRMJpUnEronv2" />
@@ -471,7 +470,7 @@
           <Link Id="Dt5ml7WLMA0PyS509x3Ep3" Ids="H8bgGzfs10sONk2tsNR1l9,Af2tEpVrXGfQGu0kFx0sW4" IsHidden="true" />
           <Link Id="MZyp3EGZ5pcM9oUobqy2ri" Ids="MHMlGtxCS8XNMTcb1Zysl0,T43i90pWiyGOEDas2JdMl4" />
           <Link Id="JowZUeGHZMNMKOUYdlnPFL" Ids="B6err2Z8ZfzLVZSDwFoF6X,EeahMuqMloHLc8CDpyn2GW" IsHidden="true" />
-          <Link Id="TufgE6YL1CSODPwb3jYnVF" Ids="CND65AX9vshOoWWCALbOXD,JKtETLQVZ6lPWi6nUcHzuZ" />
+          <Link Id="TufgE6YL1CSODPwb3jYnVF" Ids="CND65AX9vshOoWWCALbOXD,JfMAFivRGsfM5Ibr0clz1L,JKtETLQVZ6lPWi6nUcHzuZ" />
           <Link Id="RVnv64vOOKgMt7FEKQHapo" Ids="Vgqy8F3SrBkM1jQ2OCIncl,A0UqptCVIMkOOFmwJIyomE" IsHidden="true" />
           <Link Id="MItWr995aTiNOLNGywQSvT" Ids="H8JodCIkc7uPnKwSbdnnq9,PjH2hsEBqG2MhUJXg0XL7R" IsHidden="true" />
           <Link Id="P5hYOljsng7PvTQrSmhcoX" Ids="CND65AX9vshOoWWCALbOXD,C7HPduQRQfJMZ63cTyEfpw" />
@@ -568,8 +567,6 @@
           <Link Id="MuweBxtdqjeNhi9Ck1o0Wl" Ids="F5oAusMR4uKPk7Wo8KNkzj,LWmWlCw7D14NlZxdIabujk" />
           <Link Id="BEa2WZZV6ASPS8AX5x3yQn" Ids="EEa5545xhpOPNr1w4FAtok,PSUOZMOtRTqLW40XOTvfdb" IsHidden="true" />
           <Link Id="Can4zf6pkKPOzEJDodPJZs" Ids="PSUOZMOtRTqLW40XOTvfdb,L5iOGp8ogowNYQ5GduMvwi" />
-          <Link Id="GiilgxYhRqDLRFPSlqvFll" Ids="SFhYt74eIPONvEDzgj7g1r,LQpwaOqP5SgP08Kxxe1yWL" IsFeedback="true" />
-          <Link Id="G92jeRqxxGYM7lvnpvppS9" Ids="RRtsUQcUr3oLUCiu9oHXHl,SFhYt74eIPONvEDzgj7g1r" />
           <Link Id="DmxEvYzQXSfOx1g2zPTk5J" Ids="PDHSvrIaUDxLdJJYnHVk7y,DbiwNuSwuORODKEfSChmJx" />
           <Link Id="KILRX43jKW0PQmDzFZG5yS" Ids="CAaixMxL1xiLdn02Bjelin,TtL0CVzmqsRMwciTWx8SDB" IsHidden="true" />
           <Link Id="JM50mOx0s3YNtu4YEqfaAN" Ids="TtL0CVzmqsRMwciTWx8SDB,E5kucJImQYEMiAqB8k4rRS" />
@@ -623,6 +620,7 @@
           <Patch Id="P07cmnDDTucLK9OS614fwc" Name="SetBeatAtTime">
             <Pin Id="VUfPLmjkZibLWT2hXQ5Y51" Name="Beat At TIme" Kind="InputPin" DefaultValue="0" />
           </Patch>
+          <Link Id="AuObY122RSYLOk2clkwtnQ" Ids="RRtsUQcUr3oLUCiu9oHXHl,F0GwATRuou9Obrro5nWQZw" />
         </Patch>
       </Node>
     </Canvas>
@@ -647,6 +645,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="CpqzJ7z7xgQQZmX4dFSjd0" Location="VL.CoreLib" Version="2021.4.10-1014-gedb3112d37" />
+  <NugetDependency Id="CpqzJ7z7xgQQZmX4dFSjd0" Location="VL.CoreLib" Version="2021.4.5" />
   <PlatformDependency Id="ODWBLaCn8F8L8ILmTXKy9E" Location="./lib/netstandard2.0/AbletonLink.dll" />
 </Document>

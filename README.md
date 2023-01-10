@@ -1,6 +1,6 @@
 # VL.IO.AbletonLink
 
-VL wrapper for [Ableton Link](https://github.com/Ableton/link). 
+VL wrapper for [Ableton Link](https://ableton.github.io/link/). 
 Use it to synchronize vvvv to [other applications and devices](https://www.ableton.com/en/link/products) that support Ableton Link.
 
 
@@ -21,3 +21,5 @@ Download: http://visualprogramming.net
 ## License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")](http://creativecommons.org/publicdomain/zero/1.0/deed)
+
+<sub>Depends on [Ableton Link](https://github.com/Ableton/link) please see their [license](https://github.com/Ableton/link/blob/master/LICENSE.md) for further details.</sub>

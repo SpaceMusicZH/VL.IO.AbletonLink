@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)..\lib\netstandard2.0</OutDir>
+    <OutDir>$(SolutionDir)..\lib\netstandard2.0\</OutDir>
     <IncludePath>$(SolutionDir)\AbletonLinkDLL\link\include;$(SolutionDir)\AbletonLinkDLL\link\modules\asio-standalone\asio\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

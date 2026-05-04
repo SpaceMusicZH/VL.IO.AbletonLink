@@ -1,12 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>AbletonLink</AssemblyName>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Platforms>x64</Platforms>
+    <AssemblyName>VL.IO.AbletonLink</AssemblyName>
     <RootNamespace>VL.IO</RootNamespace>
-    <OutputPath>..\lib</OutputPath>   
+    <OutputPath>..\lib</OutputPath>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
     <Authors>bj-rn</Authors>
     <Company>Studio JHH</Company>
   </PropertyGroup>
@@ -19,6 +23,10 @@
 
   <ItemGroup>
     <ProjectReference Include="AbletonLinkDLL\AbletonLinkDLL.vcxproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="VL.Audio" Version="1.9.17" />
   </ItemGroup>
 
 </Project>
